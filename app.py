@@ -759,7 +759,7 @@ st.markdown(”<div style='height:.5rem'></div>”, unsafe_allow_html=True)
 
 # Chart
 
-with st.spinner("Gerando gráficos…"):
+with st.spinner(“Gerando gráficos…”):
 fig_chart = build_chart(price_series, spot, K1, K2, K3, n,
 struct_name, commodity, expiry, unit)
 st.pyplot(fig_chart, use_container_width=True)
