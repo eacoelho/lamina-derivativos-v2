@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 """
 Options Structure Sheet Generator
 Mesa de Derivativos - Agrocommodities
@@ -759,7 +760,7 @@ def color_payoff(val):
 col_payoff = f"Payoff ({unit})"
 styled = (
     payoff_df.style
-    .applymap(color_payoff, subset=[col_payoff])
+    .map(color_payoff, subset=[col_payoff])
     .set_properties(**{
         "background-color": "#0b0f1e",
         "color": "#e2e8f0",
